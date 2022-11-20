@@ -5,10 +5,13 @@ public class Carro {
    private String cor;
    private Integer portas;
 
-   public Carro(String placa, String cor, Integer portas) {
+   private String marca;
+
+   public Carro(String placa, String cor, Integer portas, String marca) {
        this.placa = placa;
        this.cor = cor;
        this.portas = portas;
+       this.marca = marca;
    }
 
    public String getPlaca(){
@@ -33,6 +36,14 @@ public class Carro {
 
    public void setPortas(Integer portas){
        this.portas = portas;
+   }
+
+   public String getMarca(){
+       return marca;
+   }
+
+   public void setMarca(){
+       this.marca = marca;
    }
 
 
